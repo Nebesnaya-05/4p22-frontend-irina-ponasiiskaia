@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+head {
+    display: none;
+}
+
+body, html {
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    display: block;
+}
+
+.common-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*display: flex;*/
+    align-content: center;
+    padding: 20px 0 20px 230px;
+    font-size: 38px;
+    /*flex: 0 0 auto;*/
+    height: 170px;
+    background: orangered;
+    }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.common-aside {
+    position: fixed;
+    top: 170px;
+    left: 0;
+    font-size: 40px;
+}
+
+.common-aside__wrapper {
+    background-color: white;
+
+}
+
+.common-aside__content {
+    font-family: 'Times New Roman', Times, serif;
+    border-right: 2px solid rgb(196, 196, 196);
+    padding: 20px 20px 300px 20px;
+}
+
+.common-aside__title {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.common-aside__list-link {
+    color: rgb(235, 68, 27);
+}
+
+.common-aside__list-item {
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: block;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+aside__list-link {
+    color: orange;
+}
+
+.common-section {
+    position: absolute;
+    top: 220px;
+    left: 340px;
+    width: 75%;
+    padding-bottom: 280px;
+    z-index: -1;
+} 
+
+.common-section__wrapper {
+    background-color: white;
+}
+
+.common-section__element-subtitle {
+    position: sticky;
+    top: 169px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    background-color: rgb(82, 9, 69);
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.common-section__element-list {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.common-section__element {
+    background-color: white;
+}
+
+.common-footer {
+    flex: 0 0 auto;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.common-footer__wrapper {
+    background-color: orangered;
+    width: 100%;
+}
+
+.common-footer__text {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 6px;
+    color: black;
+    font-size: 20px;
+}
