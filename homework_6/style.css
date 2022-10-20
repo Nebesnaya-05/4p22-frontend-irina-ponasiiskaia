@@ -19,7 +19,7 @@ body, html {
     width: 100%;
     /*display: flex;*/
     align-content: center;
-    padding: 20px 0 20px 230px;
+    padding: 35px 0 20px 100px;
     font-size: 38px;
     /*flex: 0 0 auto;*/
     height: 170px;
@@ -33,7 +33,7 @@ body, html {
     flex-direction: column;
     min-height: 100%;
     position: relative;
-    font-size: 20px;
+    font-size: calc(10px + 15 * (100vw / 1440));
 }
 
 .main {
@@ -56,12 +56,12 @@ body, html {
 .common-aside__content {
     font-family: 'Times New Roman', Times, serif;
     border-right: 2px solid rgb(196, 196, 196);
-    padding: 20px 20px 300px 20px;
+    padding: 20px 20px 400px 40px;
 }
 
 .common-aside__title {
     font-weight: 400;
-    font-size: 30px;
+    font-size: calc(20px + 10 * (100vw / 1440));
     margin-bottom: 25px;
 }
 
@@ -121,7 +121,7 @@ aside__list-link {
 
 .common-section__element-list {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: calc(10px + 15 * (100vw / 1440));
     padding: 10px;
 }
 
