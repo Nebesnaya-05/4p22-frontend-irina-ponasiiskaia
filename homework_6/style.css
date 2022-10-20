@@ -121,9 +121,10 @@ aside__list-link {
 
 .common-section__element-list {
     font-family: 'Times New Roman', Times, serif;
-    font-size: calc(10px + 15 * (100vw / 1440));
-    padding: 10px;
-}
+    font-size: calc(15px + 15 * (100vw / 1440));
+    padding: 10px 10px 10px 23px;
+    line-height: 1.3;
+    }
 
 .common-section__element {
     background-color: white;
