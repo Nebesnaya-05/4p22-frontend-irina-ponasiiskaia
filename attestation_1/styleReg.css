@@ -1,0 +1,632 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+
+}
+
+.header {
+    height: calc(80 / 1440 * 100vw);
+    padding: calc(18 / 1440 * 100vw) calc(42.48 / 1440 * 100vw) calc(12 / 1440 * 100vw) calc(30 / 1440 * 100vw);
+    display: flex;
+    background: white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-family: 'Inter';
+    font-weight: 700;
+    
+}
+
+.header__logo {
+    width: 222px;
+    height: 43px;
+    margin-right: calc(30 / 1440 * 100vw);
+
+}
+
+.header__link {
+    margin-left: auto;
+    align-self: center;
+    font-size: calc(24 / 1440 * 100vw);
+    margin-bottom: 0.3vw;
+}
+
+.header__title {
+    font-family: 'Roboto' , bold;
+    font-style: normal;
+    align-self: center;
+    font-size: calc(36 / 1440 * 100vw);
+    color: #787878;
+    
+}
+
+.header__registration {
+    text-decoration: none;
+    color: #1A226B;
+    
+}
+
+.header__login {
+    text-decoration: none;
+    color: #787878;
+    margin-left: calc(23.04 / 1440 * 100vw);
+
+}
+
+main {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    background-color:white;
+    margin: 0;
+    padding-bottom: 20px;
+
+}
+
+.form__registration {
+    width: calc(600 / 1440 * 100vw);
+    height: 100%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+    margin: calc(97.92 / 1440 * 100vw) 29vw;
+    margin-top: 100px;
+    padding: calc(27.36 / 1440 * 100vw) calc(46.08 / 1440 * 100vw) calc(37 / 1440 * 100vw);
+    font-family: 'Roboto';
+    font-weight: 700;
+    z-index: 0;
+
+}
+
+.form-registration__heading {
+    font-size: calc(50 / 1440 * 100vw);
+    color: #787878;
+    text-align: center;
+}
+
+.form-registration__email {
+    position: relative;
+    
+}
+
+.form-registration__password {
+    position: relative;
+    
+}
+.form-registration__label-email {
+    /*position: absolute;*/
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+    margin: calc(-20 / 1440 * 100vw);
+    margin-left: 0px;
+    font-size: calc(16 / 1440 * 100vw);
+}
+
+.form-registration__input-email {
+    /*position: absolute;*/
+    border: 2px solid #787878;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: #787878;
+    height: calc(49 / 1440 * 100vw);
+    padding-left: calc(16 / 1440 * 100vw);
+    font-size: calc(28 / 1440 * 100vw);
+    margin-bottom: calc(25 / 1440 * 100vw);
+    font-weight: 700;            
+    width: calc(510 / 1440 * 100vw);
+}
+
+.form-registration__input-email::placeholder {
+    color: #CCCCCC;
+}
+
+.form-registration__label-password {
+    /*position: absolute;*/
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #787878;
+    margin: calc(-20 / 1440 * 100vw);
+    margin-left: 0px;
+    font-size: calc(16 / 1440 * 100vw);
+}
+
+.form-registration__input-password {
+    border: 2px solid #787878;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    height: calc(49 / 1440 * 100vw);
+    padding-left: calc(16 / 1440 * 100vw);
+    font-size: calc(28 / 1440 * 100vw);
+    margin-bottom: calc(11 / 1440 * 100vw);
+    width: calc(510 / 1440 * 100vw);    
+
+}
+
+.form-registration__input-password::placeholder {
+    color: #CCCCCC;
+}
+.form-registration__label-confirmation {
+    margin: 0 0 calc(3 / 1440 * 100vw) 0;
+    font-size: calc(16 / 1440 * 100vw);
+    color: #787878;
+}
+
+.form-registration__input-confirmation{
+    height: calc(49 / 1440 * 100vw);
+    outline:  none;
+    border: 2px solid #787878;
+    padding-left: calc(15 / 1440 * 100vw);
+    font-size: calc(28 / 1440 * 100vw);
+    color: grey;
+    font-weight: 700;
+    margin-bottom: calc(8.64 / 1440 * 100vw);
+    width: calc(510 / 1440 * 100vw);
+}
+
+.form-registration__input-confirmation::placeholder {
+    color: #CCCCCC;
+}
+.form-registration__radio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio__gender {
+    margin: calc(1 / 1440 * 100vw) 0 0 0;
+    font-size: calc(16 / 1440 * 100vw) ;
+    color: #787878;
+}
+
+.radio__man {
+    font-size: calc(14 / 1440 * 100vw) ;
+    font-weight: 400;
+    margin-bottom: calc(4 / 1440 * 100vw);
+}
+           
+.radio__input-man {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.radio__input-man + label {
+    
+    align-items: center;
+    user-select: none;
+}
+
+.radio__input-man:checked + label::before {
+    background-color: #787878;
+}
+
+.radio__input-man + label::before {
+    content: '';
+    display: inline-block;
+    width: calc(10.08 / 1440 * 100vw);
+    height: calc(10.08 / 1440 * 100vw);
+    border: 2px solid #787878;
+    background-clip: content-box;
+    border-radius: 50%;
+    padding: calc(3 / 1440 * 100vw);
+    margin-right: calc(10.08 / 1440 * 100vw);
+}
+
+.radio__label-man {
+    color: #787878;
+    font-size: calc(14 / 1440 * 100vw);
+    display: flex;
+    font-weight: 400;
+}
+
+.radio__women {
+    font-size: calc(14 / 1440 * 100vw) ;
+    font-weight: 400;
+    margin-bottom: calc(4 / 1440 * 100vw);
+}
+           
+.radio__input-women {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.radio__input-women + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    
+}
+
+.radio__input-women:checked + label::before {
+    background-color: #787878;
+}
+
+
+.radio__input-women + label::before {
+    content: '';
+    display: inline-block;
+    width: calc(10.08 / 1440 * 100vw);
+    height: calc(10.08 / 1440 * 100vw);
+    border: 2px solid #787878;
+    background-clip: content-box;
+    border-radius: 50%;
+    padding: calc(3 / 1440 * 100vw);
+    margin-right: calc(10.08 / 1440 * 100vw);
+}
+
+.radio__label-women {
+    color: #787878;
+    font-size: calc(14 / 1440 * 100vw);
+    display: flex;
+    font-weight: 400;
+}
+
+.form-registration__input-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form-registration__input-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.form-registration__input-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: calc(8.64 / 1440 * 100vw);
+    height: calc(8.64 / 1440 * 100vw);
+    border: 2px solid #787878;
+    background-clip: content-box;
+    padding: calc(2 / 1440 * 100vw);
+    margin-right: calc(10 / 1440 * 100vw);
+}
+
+.form-registration__input-checkbox:checked + label::before {
+    background-color: #787878;
+}
+
+.form-registration__label-checkbox {
+    font-size: calc(14 / 1440 * 100vw);
+    font-weight: 400;
+    color: #787878;
+}
+
+.text__span {
+    display: block;
+    font-size: calc(16 / 1440 * 100vw);
+    font-weight: 700;
+    color: #787878;
+    margin: 0 0 calc(5 / 1440 * 100vw) 0;
+}
+
+.text__textarea {
+    font-family: 'Roboto';
+    font-weight: 700;
+    outline: none;
+    width: 100%;
+    height: calc(246 / 1440 * 100vw);
+    border: 2px solid #787878;
+    resize: none;
+    padding-left: calc(15 / 1440 * 100vw);
+    padding-top: calc(7 / 1440 * 100vw);
+    font-size: calc(28 / 1440 * 100vw);
+    color: rgba(120, 120, 120, 1);
+    font-weight: 700;
+}
+
+.text__textarea::placeholder {
+    font-size: calc(28 / 1440 * 100vw);
+    font-weight: 700;
+    color: #CCCCCC;
+}
+
+
+.form__registration__input-checkbox:checked + .form__registration__label-checkbox::before {
+    content: '✓';
+    color: white;
+}
+
+
+.form-registration__button {
+    height: calc(52 / 1440 * 100vw);
+    width: calc(180 / 1440 * 100vw);
+    margin: calc(65 / 1440 * 100vw);
+    margin-left: calc(150 / 1440 * 100vw);
+    margin-right: auto;
+    margin-top: calc(24 / 1440 * 100vw);
+    font-size: calc(24 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
+    border: none;
+    font-weight: 700;
+    color: white;
+    background: #1A226B;
+    font-family: 'Roboto';
+    align-self: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+
+    
+    .header__logo {
+        width: calc(222 / 1440 * 100vw);
+        height: calc(43 / 1440 * 100vw);
+
+    }   
+           
+    .form-registration {
+        width: calc(600 / 1440 * 100vw);
+        height: calc(875 / 1400 * 100vw);
+        margin: calc(80.64 / 1440 * 100vw) 11vw;
+        padding: calc(24.576 / 1440 * 100vw) calc(46.08 / 1440 * 100vw) calc(37 / 1440 * 100vw);
+    }
+
+    .form-registration__heading {
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: 50px;
+        margin: 15px auto 12px;
+    }
+    
+    .form-registration__label-email {
+        margin: 0 0 calc(3 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-email {
+        height: calc(45 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        margin-bottom: calc(0.5 / 1440 * 100vw);
+    }
+    
+    .form-registration__label-password {
+        margin: 0 0 calc(3 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-password {
+        height: calc(49 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        margin-bottom: calc(9.216 / 1440 * 100vw);
+    }
+    
+    .form-registration__label-confirmation {
+        margin: 0 0 calc(3 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-confirmation {
+        height: calc(49 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        margin-bottom: calc(9.984 / 1440 * 100vw);
+    }
+    
+    .text__textarea {
+        margin-bottom: calc(3 / 1440 * 100vw);
+    }
+    
+    .form-registration__checkbox {
+        margin-bottom: calc(56.064 / 1440 * 100vw);
+        margin-bottom: calc(30 / 1440 * 100vw) ;
+    }
+    
+    .form-registration__button {
+        height: calc(52 / 1440 * 100vw);
+        width: calc(180 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+       /* margin-top: calc(3 / 1440 * 100vw);*/
+        
+    }
+    
+    .radio__gender {
+        margin: 0 0 calc(4 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .radio__man {
+        font-size: calc(14 / 1440 * 100vw);
+        margin-bottom: calc(6.144 / 1440 * 100vw);
+    }
+        
+    .radio__man__input-man + label::before {
+        width: calc(6.912 / 1440 * 100vw);
+        height: calc(6.912 / 1440 * 100vw);
+        padding: calc(2 / 1440 * 100vw);
+        margin-right: calc(10.08 / 1440 * 100vw);
+    }
+            
+    .radio__woman {
+        font-size: calc(14 / 1440 * 100vw);
+        margin: 0 0 calc(4.32 / 1440 * 100vw) 0;
+    }
+        
+    .radio__input-woman + label::before {
+        width: calc(6.912 / 1440 * 100vw);
+        height: calc(6.912 / 1440 * 100vw);
+        padding: calc(2 / 1440 * 100vw);
+        margin-right: calc(10.08 / 1440 * 100vw);
+    }
+    
+    .text__span {
+        font-size: calc(16 / 1440 * 100vw);
+        margin: 0 0 calc(5 / 1440 * 100vw) 0;
+    }
+    
+    .text__textarea {
+        height: calc(246 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        padding-top: calc(7 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    
+    .text__textarea::placeholder {
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-checkbox + label::before {
+        width: calc(8.64 / 1440 * 100vw);
+        height: calc(8.64 / 1440 * 100vw);
+        padding: calc(1.5 / 1440 * 100vw);
+        margin-right: calc(10 / 1440 * 100vw);
+    }
+    
+    .form-registration__label-checkbox {
+        font-size: calc(14 / 1440 * 100vw);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .header__logo {
+        width: calc(222 / 1440 * 100vw);
+        height: calc(43 / 1440 * 100vw);
+    }
+
+    .form-registration {
+        width: calc(600 / 768 * 100vw);
+        margin: calc(80.64 / 768 * 100vw) 11vw;
+        padding: calc(24.576 / 768 * 100vw) calc(46.08 / 768 * 100vw) calc(37 / 768 * 100vw);
+    }
+
+    .form-registration__heading {
+        /*font-size: calc(50 / 768 * 100vw);
+        line-height: 50px;*/
+        margin: 10px auto 0px;
+
+    }
+    
+    /*.form-registration {
+        padding-top: calc(4.32 / 768 * 100vw);
+    }*/
+    
+    .form-registration__label-email {
+        margin: 0 0 calc(3 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-email {
+        height: calc(49 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        margin-bottom: calc(1 / 1440 * 100vw);
+    }
+    
+    .form-registration__label-password {
+        margin: 0 0 calc(3/ 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-password {
+        height: calc(49 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        margin-bottom: calc(9.216 / 1440 * 100vw);
+    }
+    
+    .form-registration__label-confirmation {
+        margin: 0 0 calc(3 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-confirmation {
+        height: calc(49 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+        margin-bottom: calc(9.984 / 1440 * 100vw);
+    }
+    
+    .text__textarea {
+        margin-bottom: calc(3 / 1440 * 100vw);
+    }
+    
+    .form-registration__checkbox {
+        margin-bottom: calc(15 / 1440 * 100vw);
+        
+    }
+        
+    .radio__gender {
+        margin: 0 0 calc(5.2224 / 1440 * 100vw) 0;
+        font-size: calc(16 / 1440 * 100vw);
+    }
+    
+    .radio__man {
+        font-size: calc(14 / 1440 * 100vw);
+        margin-bottom: calc(6.144 / 1440 * 100vw);
+    }
+        
+    .radio__man__input-man + label::before {
+        width: calc(6.912 / 1440 * 100vw);
+        height: calc(6.912 / 1440 * 100vw);
+        padding: calc(2 / 1440 * 100vw);
+        margin-right: calc(10.08 / 1440 * 100vw);
+    }
+            
+    .radio__woman {
+        font-size: calc(14 / 1440 * 100vw);
+        margin: 0 0 calc(4.32 / 1440 * 100vw) 0;
+    }
+        
+    .radio__input-woman + label::before {
+        width: calc(6.912 / 1440 * 100vw);
+        height: calc(6.912 / 1440 * 100vw);
+        padding: calc(2 / 1440 * 100vw);
+        margin-right: calc(10.08 / 1440 * 100vw);
+    }
+    
+    .text__span {
+        font-size: calc(16 / 1440 * 100vw);
+        margin: 0 0 calc(5 / 1440 * 100vw) 0;
+    }
+    
+    .text__textarea {
+        height: calc(246 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        padding-top: calc(7 / 1440 * 100vw);
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    
+    .text__textarea::placeholder {
+        font-size: calc(28 / 1440 * 100vw);
+    }
+    
+    .form-registration__input-checkbox + label::before {
+        width: calc(8.64 / 1440 * 100vw);
+        height: calc(8.64 / 1440 * 100vw);
+        padding: calc(1.5 / 1440 * 100vw);
+        margin-right: calc(10 / 1440 * 100vw);
+    }
+    
+    .form-registration__label-checkbox {
+        font-size: calc(14 / 1440 * 100vw);
+    }
+
+    
+    .form-registration__button {
+        height: calc(52 / 1440 * 100vw);
+        width: calc(180 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+        margin: calc(1.5 / 1440 * 100vw);
+        margin-left: calc(150 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+    }
+    
+}

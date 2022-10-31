@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аттестация №1</title>
+    <link href="styleReg.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="logo.png" alt="logo">
+        <div class="header__title">PCS Frontend</div>
+        <div class="header__link">
+            <a href="styleReg.css" class="header__registration">Регистрация</a>
+            <a href="index.html" class="header__login">Вход</a>
+        </div>
+    </header>
+    <main>
+        <div class="form">
+            <form class="form__registration" action>
+                <p class="form-registration__heading">Регистрация</p>
+                <div class="form-registration__email">
+                    <label class="form-registration__label-email" for="email_input">Email</label>
+                    <input class="form-registration__input-email" id="email_input" name="Email" placeholder="Email">
+                </div>
+                <div class="form-registration__password">
+                    <label class="form-registration__label-password" for="password_input">Пароль</label>
+                    <input class="form-registration__input-password" id="password_input" name="password" type="password" placeholder="Введите пароль">
+                </div>
+                <div class="form-registration__label-confirmation">
+                    <label class="form-registration__label-confirmation" for="confirmation_input">Подтверждение пароля</label>
+                    <input class="form-registration__input-confirmation" id="confirmation_input" name="password-confirmation" type="password" placeholder="Подтвердите пароль">
+                </div>
+                <div class="form-registration__radio">
+                    <gender class="radio__gender">Пол</gender>
+                    <div class="radio__man">
+                        <input class="radio__input-man" id="man" name="gender" type="radio" value="man">
+                        <label class="radio__label-man" for="man">Мужчина</label>
+                    </div>
+                    <div class="radio__women">
+                        <input class="radio__input-women" id="women" name="gender" type="radio" value="women">
+                        <label class="radio__label-women" for="women">Женщина</label>
+                    </div>
+                </div>
+                <div class="form-registration__text">
+                    <span class="text__span">О себе</span>
+                    <textarea class="text__textarea" name="text" id="text" contenteditable="false" placeholder="Расскажите о себе..."></textarea>
+                </div>   
+                <div class="form-registration__checkbox">
+                    <input class="form-registratwion__input-checkbox" id="checkbox" name="checkbox" type="checkbox" value="yes">
+                    <label class="form-registration__label-checkbox" for="checkbox">Я согласен получать обновления на почту</label>
+                </div>
+                <button class="form-registration__button">Регистрация</button>
+                
+            </form>   
+        </div>
+    </main>
+</body>
+</html>
