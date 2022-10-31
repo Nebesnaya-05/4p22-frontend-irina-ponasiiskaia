@@ -186,21 +186,21 @@ body {
     .form {
         width: calc(600 / 1440 * 100vw);
         height: calc(412 / 1440 * 100vw); 
-        margin: 15vh auto;
-        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 25%);
+        margin: calc(180 / 1440 * 100vw) auto;
+        box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
         
     }
 
     .form__container {
         width: calc(600 / 1440 * 100vw);
         height: 100%;
-        margin: 25px;
+        margin: calc(25 / 1440 * 100vw);
     }
 
     .form-container__heading {
-        font-size: 50px;
-        line-height: 50px;
-        margin: 15px 55px 15px 10px;
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+        margin: calc(15 / 1440 * 100vw) calc(55 / 1440 * 100vw) calc(15 / 1440 * 100vw) calc(10 / 1440 * 100vw);
         text-align: center;
     }
 
@@ -212,7 +212,7 @@ body {
 
     .form-container__input-email {
         margin: 0;
-        padding-left: 15px;
+        padding-left: calc(15 / 1440 * 100vw);
         width: calc(509 / 1440 * 100vw);
         height: calc(49 / 1440 * 100vw);
         font-size: calc(28 / 1440 * 100vw);
@@ -221,13 +221,13 @@ body {
     }
 
     .form-container__label-email {
-        margin: -12px 0px 0px;
+        margin: calc(-12 / 1440 * 100vw) 0px 0px;
         font-size: calc(16 / 1440 * 100vw);
     }
 
     .form-container__input-password {
-        margin: 40px 0px 20px 0px;
-        padding-left: 15px;
+        margin: calc(40 / 1440 * 100vw) 0px calc(20 / 1440 * 100vw) 0px;
+        padding-left: calc(15 / 1440 * 100vw);
         width: calc(509 / 1440 * 100vw);
         height: calc(49 / 1440 * 100vw);
         font-size: calc(28 / 1440 * 100vw);
@@ -237,14 +237,14 @@ body {
 
     .form-container__label-password {
     font-size: calc(16 / 1440 * 100vw);
-    margin: 29px 0px 0px;
+    margin: calc(29 / 1440 * 100vw) 0px 0px;
     }
 
     .form-container__input:focus ~ .form-container__label,
     .form-container__input:not(:placeholder-shown) ~ .form-container__label {
         top: 5%;
         left: 10px;
-        font-size: 16px;
+        font-size: calc(16 / 1440 * 100vw);
     }
 
 
@@ -280,12 +280,12 @@ body {
     }*/
 
     .form-container__button {
-        height: calc(52 / 768 * 100vw);
-        width: calc(180 / 768 * 100vw);
-        margin: 80px 45px;
-        font-size: calc(24 / 768 * 100vw);
-        line-height: 16px;
-        padding: 15px ;
+        height: calc(52 / 1440 * 100vw);
+        width: calc(180 / 1440 * 100vw);
+        margin: calc(85 / 1440 * 100vw) calc(80 / 1440 * 100vw);
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        padding: calc(5 / 1440 * 100vw) 0px calc(10 / 1440 * 100vw);
     }
 }
 
