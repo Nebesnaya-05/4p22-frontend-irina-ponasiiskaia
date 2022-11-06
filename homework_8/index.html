@@ -7,21 +7,22 @@
     <title>Домашняя работа №8 Упрощенный Калькулятор</title>
 </head>
 <body>
-    <section class="form">
-       <section class="form__input">
-        <div class="form-input__number1">
-            <input class="input" id="number1" name="number1" type="text" placeholder="Введите значение 1">
+    <div class="form">
+       <div class="form__input">
+            <div class="form-input__number1">
+                <input class="input" id="number1" name="number1" type="text" placeholder="Введите значение 1">
+            </div>
+            <div class="form-input__sign">
+                <input class="input" id="sign" name="sign" type="text" placeholder="+ - / *">
+            </div>
+            <div class="form-input__number2">
+                <input class="input" id="number2" name="number2" type="text" placeholder="Введите значение 2">
+            </div>
+            <div class="form__button">
+                <button onclick="func()" class="form-button" id="click">Рассчитать</button>  
+            </div>
         </div>
-        <div class="form-input__sign">
-            <input class="input" id="sign" name="sign" type="text" placeholder="+ - / *">
-        </div>
-        <div class="form-input__number2">
-            <input class="input" id="number2" name="number2" type="text" placeholder="Введите значение 2">
-        </div>
-        <div class="form__button">
-            <button onclick="func()" class="form-button" id="click">Рассчитать</button>  
-        </div>
-    </section>
+    </div>
     <div class="resultform" id="resultform"></div>
     <script src="script.js"></script>  
 </body>
