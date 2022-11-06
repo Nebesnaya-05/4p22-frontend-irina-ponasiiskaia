@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа №8 Упрощенный Калькулятор</title>
+</head>
+<body>
+<main>
+    <form class="form">
+        <form class="form__input">
+        <div class="form-input__num1">
+            <input class="input" id="num1" name="num1" type="text" placeholder="Введите значение 1">
+        </div>
+        <div class="form-input__operator">
+            <input class="input" id="operator" name="operator" type="text" placeholder="+ - / *">
+        </div>
+        <div class="form-input__num2">
+            <input class="input" id="num2" name="num2" type="text" placeholder="Введите значение 2">
+        </div>
+        <div class="form__button">
+            <button onclick="func()" class="form-button" id="submit">Рассчитать</button>  
+        </div>
+    </form>  
+    <div class="resultform" id="resultform"></div>
+</main>
+<script src="script.js"></script> 
+</body>
+</html>
